@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#9CD6E5"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="30dp"
+        android:text="请选择连接方式"
+        android:layout_marginBottom="40dp"
+        />
+    
+    <Button 
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:background="@drawable/wifi"
+        android:onClick="internetMethod"
+        android:layout_marginBottom="30dp"
+        />
+    <Button 
+        android:id="@+id/buletooch_method"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:background="@drawable/bluetooth"
+        android:onClick="buletoochMethod"
+        />
+
+</LinearLayout>

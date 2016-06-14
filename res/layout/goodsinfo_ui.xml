@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ScanActivity" >
+
+    <LinearLayout
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#A3D8E5" >
+        <Button 
+             android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:layout_gravity="center_vertical"
+            android:text="加入购物清单"
+            />
+
+       
+       
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/res_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/def_text"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        style="@style/titlebar"
+        android:background="#A3D8E5" >
+
+        <TextView
+            style="@style/titletext"
+            android:text="@string/title_res" />
+
+       <!--  <ImageButton
+            android:id="@+id/back"
+            style="@style/titleback"
+            android:contentDescription="@string/contentDescription" /> -->
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/res_pic"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titlebar"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/open" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sure"
+        android:layout_centerHorizontal="true"
+     android:paddingBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textColor="@android:color/holo_blue_light"
+            android:text="商品数量："
+            android:textSize="16sp"
+            />
+       
+        <Button
+            android:id="@+id/addbt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            
+            android:background="@drawable/minus_alt"
+            android:text="-">   
+        </Button>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/edt"
+            android:text="0"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_light"
+            
+            android:layout_height="wrap_content">
+            
+        </EditText>
+        <Button
+            android:id="@+id/subbt"
+
+             android:layout_width="30dp"
+            android:layout_height="30dp"
+           android:background="@drawable/plus_alt"
+            android:text="+">
+            
+        </Button>
+        <TextView
+            android:id="@+id/ttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

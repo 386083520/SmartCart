@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ScanActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#555" >
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/def_selector"
+            android:scaleType="center"
+            android:src="@drawable/ic_action_about_96" 
+              android:contentDescription="@string/contentDescription"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/titlebar"
+        android:background="#555" >
+
+        <TextView
+           style="@style/titletext"
+            android:text="@string/title_log"
+           />
+
+        <ImageButton
+            style="@style/titleback"
+              android:contentDescription="@string/contentDescription"
+         />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/loglistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#efefef"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:padding="10dp" >
+    </ListView>
+
+</RelativeLayout>

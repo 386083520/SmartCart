@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:background="@drawable/background_login"
+    >
+	<TableRow android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="5dip"
+		android:paddingRight="20dip"
+		android:layout_marginTop="20dip"
+		>		
+		<TextView android:layout_width="100dp" 
+		    android:textSize="20sp"
+		    android:textColor="#ffffff"
+			android:layout_height="wrap_content"
+			android:text="@string/username"
+			/>			
+		<EditText android:id="@+id/text_reg_username"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="请输入登录账号"
+			/>
+	</TableRow>
+	
+	<TableRow android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="5dip"
+		android:paddingRight="20dip"
+		android:layout_marginTop="10dip"
+		>
+		<TextView android:layout_width="100dp" 
+		    android:textSize="20sp"
+		    android:textColor="#ffffff"
+			android:layout_height="wrap_content"
+			android:text="@string/password"
+			/>
+		<EditText android:id="@+id/text_reg_password"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:password="true"
+			android:hint="请输入登录密码"
+			/>
+	</TableRow>
+	<TableRow android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="5dip"
+		android:paddingRight="20dip"
+		android:layout_marginTop="10dip"
+		>
+		<TextView android:layout_width="100dp" 
+		    android:textSize="20sp"
+		    android:textColor="#ffffff"
+			android:layout_height="wrap_content"
+			android:text="@string/pay_password"
+			/>
+		<EditText android:id="@+id/text_pay_password"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:password="true"
+			android:hint="请输入支付密码"
+			/>
+	</TableRow>
+	
+	
+	
+	
+	<TableRow android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:paddingTop="10dp"
+		android:paddingLeft="5dip"
+		>	
+		<ImageButton android:id="@+id/imb_reg_register"
+			android:src="@drawable/register"
+			android:layout_width="100dp"
+			android:layout_height="40dp"
+			android:onClick="register"
+			android:background="@drawable/background_button_div"
+			/>
+			
+		<ImageButton android:id="@+id/imb_reg_reset"
+			android:src="@drawable/reset"
+			android:layout_width="100dp"
+			android:layout_height="40dp"
+			android:onClick="reset"
+			android:background="@drawable/background_button_div"
+			/>
+			
+		<ImageButton android:id="@+id/imb_reg_go_back"
+			android:src="@drawable/go_back"
+			android:layout_width="100dp"
+			android:layout_height="40dp"
+			android:onClick="goback"
+			android:background="@drawable/background_button_div"
+			/>
+			
+	</TableRow>
+	
+	
+	
+</LinearLayout>
+

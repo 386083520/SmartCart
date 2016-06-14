@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="main_home">首页</string>
+<string name="goods_search">商品搜索</string>
+<string name="unfinished_order">未完成订单</string>
+<string name="more">消费记录</string>
+    <string name="app_name">智能购物</string>
+    <string name="username">用 户 名</string>
+    <string name="password">密      码</string>
+    <string name="pay_password">支付密码</string>
+    	<string name="pro_title">加载数据</string>
+   	<string name="pro_message">正在加载数据，请稍后...</string>
+    <string name="login_account_null">登录账号不能为空</string>
+    <string name="login_password_null">登录密码不能为空</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_scan">扫描</string>
+    <string name="title_res">商品信息</string>
+    <string name="title_log">记录</string>
+	<string name="scan_tip">请将条形码/二维码置于取景框内</string>
+	<string name="copy_right">智能购物\n\nBy:guanshoudong\n386083520@qq.com</string>
+	<string name="def_text">望远镜看到的距离不能缩短你要走的路</string>
+	<string name="def_time">00:00 30&#8211;09&#8211;1990 </string>
+	<string name="contentDescription">abc</string>
+	<string name="scan_pic_dir">/mnt/sdcard/QR</string>
+	<string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="note_str">Press &quot;Menu&quot; to set the data format</string>
+    
+    
+     <string name="pay_title">请输入支付密码</string>
+     <string name="pay_sure">确认支付</string>
+     <string name="pay_cancel">取消</string>
+    <string name="pay_content">消费金额：34.50元</string>
+</resources>

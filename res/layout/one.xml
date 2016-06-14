@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3D8E5"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#FF72CAE1"
+        android:text=""
+        />
+   
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head"
+        android:paddingTop="60dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView 
+        android:id="@+id/user_info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎您:"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        />
+     <TextView 
+        android:id="@+id/user_info_remain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        />
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="250px"
+        android:layout_gravity="center"
+        android:onClick="scanPic"
+        android:background="@drawable/scan"
+        />
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击扫码"
+        android:textSize="20sp"
+        
+        android:layout_gravity="center_horizontal"
+        android:onClick="scanPic"
+        android:background="#A3D8E5"
+        />
+    
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingTop="15dp"
+         android:paddingBottom="15dp"
+         android:background="#A3D8E5"
+         >
+         <TextView 
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="名称"
+             android:textSize="20dp"
+             android:textColor="#000000"
+             />
+         <TextView 
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="价格"
+             android:textSize="20dp"
+             android:textColor="#000000"
+             />
+         <TextView 
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="数量"
+             android:textSize="20dp"
+             android:textColor="#000000"
+             />
+         <TextView 
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="取消"
+             android:textSize="20dp"
+             android:textColor="#000000"
+             />
+         
+     </LinearLayout>
+    <ListView
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:padding="2dip"
+		
+		android:id="@+id/listView"	
+	></ListView>
+     <TextView 
+         android:id="@+id/sumPrice"
+         android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="总价："
+        
+        />
+    
+    <TextView 
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        />
+ <Button 
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="结算"
+        android:layout_gravity="bottom"
+        android:textSize="30sp"
+        
+        android:onClick="pay"
+        android:background="#A3D8E5"
+        />
+</LinearLayout>

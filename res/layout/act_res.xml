@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ScanActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#555" >
+
+        <ImageButton
+            android:id="@+id/copy"
+            style="@style/res_bottom_btn"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/copy_32" />
+
+        <ImageButton
+            android:id="@+id/share"
+            style="@style/res_bottom_btn"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/share_32" />
+
+        <ImageButton
+             android:id="@+id/browser"
+            style="@style/res_bottom_btn"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/browser_32" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/res_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/def_text"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        style="@style/titlebar"
+        android:background="#555" >
+
+        <TextView
+            style="@style/titletext"
+            android:text="@string/title_res" />
+
+        <ImageButton
+            style="@style/titleback"
+            android:contentDescription="@string/contentDescription" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/res_pic"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titlebar"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/qr" />
+
+</RelativeLayout>
